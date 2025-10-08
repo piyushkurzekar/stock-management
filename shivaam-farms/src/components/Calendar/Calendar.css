@@ -1,0 +1,30 @@
+.calendar-day {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease;
+}
+
+.calendar-day:hover {
+  background-color: #f0f0f0;
+}
+
+.bg-danger {
+  background-color: #dc3545 !important;
+}
+
+.bg-success {
+  background-color: #28a745 !important;
+}
+
+.bg-white {
+  background-color: #ffffff !important;
+}
+
+@media (max-width: 768px) {
+  .calendar-day {
+    min-height: 50px;
+    font-size: 0.8rem;
+  }
+}
