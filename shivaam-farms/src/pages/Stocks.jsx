@@ -147,7 +147,7 @@ const Stocks = () => {
           items={items.filter(
             (item) => item.category?.toLowerCase() === "furniture"
           )}
-        />
+        />  
       )
     },
     {
