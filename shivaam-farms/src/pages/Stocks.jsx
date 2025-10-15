@@ -93,9 +93,9 @@ const Stocks = () => {
     } catch (err) { console.error(err); }
   };
 
-  const [showLowStockModal, setShowLowStockModal] = useState(false);
+  // const [showLowStockModal, setShowLowStockModal] = useState(false);
 
-  const [lowStockItems, setLowStockItems] = useState([]);
+  // const [lowStockItems, setLowStockItems] = useState([]);
 
   const [showModal, setShowModal] = useState(false);
 
@@ -182,19 +182,30 @@ const Stocks = () => {
           )}
         />
       )
+    },
+    {
+      id: "others",
+      label: "Others",
+      content: (
+        <InventoryTable
+          items={items.filter(
+            (item) => item.category?.toLowerCase() === "others"
+          )}
+        />
+      )
     }
   ];
 
-  //  Filter Low Stocks
-  const handleLowStockClick = () => {
-    const filtered = items.filter(
-      (item) => Number(item.current_stock) <= Number(item.min_stock)
-    );
+  // //  Filter Low Stocks
+  // const handleLowStockClick = () => {
+  //   const filtered = items.filter(
+  //     (item) => Number(item.current_stock) <= Number(item.min_stock)
+  //   );
 
-    console.log("Low Stock Items:", filtered); // Debug
-    setLowStockItems(filtered);
-    setShowLowStockModal(true);
-  };
+  //   console.log("Low Stock Items:", filtered); // Debug
+  //   setLowStockItems(filtered);
+  //   setShowLowStockModal(true);
+  // };
 
 
   const overlayStyle = {
@@ -261,7 +272,7 @@ const Stocks = () => {
 
         />
 
-        <Card
+        {/* <Card
           cardTitle="Low Stock Alerts"
           cardSubtitle={`${items.filter(
             (item) => Number(item.current_stock) <= Number(item.min_stock)
@@ -269,7 +280,7 @@ const Stocks = () => {
             } items`}
           onClick={handleLowStockClick}
           style={{ cursor: "pointer" }}
-        />
+        /> */}
 
 
         <Card
@@ -287,7 +298,7 @@ const Stocks = () => {
 
 
       {/* --- Low Stock Modal --- */}
-      {showLowStockModal && (
+      {/* {showLowStockModal && (
         <div
           className="modal fade show"
           style={{ display: "block", background: "rgba(0,0,0,0.5)" }}
@@ -347,7 +358,7 @@ const Stocks = () => {
             </div>
           </div>
         </div>
-      )}
+      )} */}
 
 
 
@@ -437,6 +448,7 @@ const Stocks = () => {
                   <option>Groceries</option>
                   <option>Maintenance</option>
                   <option>Amenities</option>
+                  <option>Others</option>
                 </select>
               </div>
 
