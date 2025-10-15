@@ -254,7 +254,7 @@ const Stocks = () => {
 
       {/* card section */}
 
-      <div className="row g-3 justify-content-center ">
+      <div className="row g-3  ">
         <Card
           cardTitle={"Total Villas"}
           cardSubtitle={"10"}
@@ -277,11 +277,11 @@ const Stocks = () => {
           cardSubtitle={`Rs.${totalExpenses.toLocaleString()}`}
 
         />
-        <Card
+        {/* <Card
           cardTitle={"Category"}
           cardSubtitle={"5"}
 
-        />
+        /> */}
       </div>
 
 
