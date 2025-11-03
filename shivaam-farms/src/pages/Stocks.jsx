@@ -196,16 +196,7 @@ const Stocks = () => {
     }
   ];
 
-  // //  Filter Low Stocks
-  // const handleLowStockClick = () => {
-  //   const filtered = items.filter(
-  //     (item) => Number(item.current_stock) <= Number(item.min_stock)
-  //   );
 
-  //   console.log("Low Stock Items:", filtered); // Debug
-  //   setLowStockItems(filtered);
-  //   setShowLowStockModal(true);
-  // };
 
 
   const overlayStyle = {

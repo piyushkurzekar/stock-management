@@ -22,6 +22,8 @@ const expenseBreakdown = [
   { name: "Other", value: 3000, color: "#6b7280" },
 ];
 
+// sfcwejnfejnfewjnejw
+
 const revenueData = [
   { month: "Jan", revenue: 4000, expenses: 2400 },
   { month: "Feb", revenue: 3000, expenses: 1398 },

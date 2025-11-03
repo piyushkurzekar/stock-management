@@ -105,7 +105,7 @@ const NewBooking = ({ onClose, onSave }) => {
               <p className="text-muted small mb-0">Enter the booking details for the new reservation</p>
             </div>
 
-            {/* close should not submit the form */}
+            close should not submit the form
             <button
               type="button"
               aria-label="Close"
@@ -233,12 +233,12 @@ const NewBooking = ({ onClose, onSave }) => {
                 required
               />
             </div>
-
+{/* 
             {dateError && (
               <div className="col-12">
                 <small className="text-danger">{dateError}</small>
               </div>
-            )}
+            )} */}
 
             {/* Footer actions */}
             <div className="col-12 form-actions d-flex flex-wrap justify-content-end mt-2 gap-2">
